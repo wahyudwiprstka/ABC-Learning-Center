@@ -1,0 +1,263 @@
+/* 
+COLOR PALETTE
+#F2F2F2
+#417D7A
+#1D5C63
+#1A3C40
+*/
+
+/* UNIVRESAL */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+button{
+    background-color: #405cf5;
+    border-width: 0;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #3247be;
+    transition: 0.3s;
+}
+.flex-container{
+    display: flex;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.direction-column{
+    flex-direction: column;
+}
+i{
+    margin-left: 5px;
+}
+
+/* HEADER & NAVS */
+.head{
+    position: fixed;
+    background-color: #1D5C63;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.head header{
+    display: flex;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    padding-left: 3vw;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding-left: 3vw;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: #a87aff;
+    transition: 0.2s;
+}
+
+.navs{
+    margin: 0;
+    display: flex;
+    padding-right: 3vw;
+}
+
+/* ul li a{
+    margin-top: 30px;
+} */
+
+/* Dropdown Navbar */
+.dropdown-content{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    border-radius: 2px;
+    width: 10vw;
+    padding: 0;
+    margin-left: 2vw;
+    transition: 0.2s;
+}
+
+.dc2{
+    margin-left: 2.5vw;
+}
+
+.dropdown-content li{
+    padding: 10px 0;
+}
+
+.dropdown-content li a{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0;
+}
+
+.dropdown-content li a:hover{
+    color: #405cf5;
+}
+
+.fa-angle-right{
+    color: white;
+    transition: 0.3s;
+}
+.topnav{
+    display: none;
+    font-size: 0.9rem;
+}
+a.icon{
+    display: none;
+}
+.topnav ul{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    left: 0%;
+    top: 80px;
+    flex-direction: column;
+    background-color: #1A3C40;
+    align-items: center;
+    margin: 0;
+}
+.topnav div.course-detail, .topnav div.course-schedule{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: #1A3C40;
+}
+.topnav ul li a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+}
+.icon{
+    display: block;
+    color: white;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Footer */
+footer{
+    height: 80px;
+    background-color: #1A3C40;
+    color: white;
+    padding: 0 30px;
+}
+
+footer ul{
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-top: 27px;
+}
+
+footer a:hover{
+    color: #a87aff;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1117px) {
+    .head{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1026px){
+    .navs{
+        display: none;
+    }
+    ul.topnavbar{
+        padding: 0;
+    }
+    .fa-angle-right{
+        display: none;
+    }
+    a.icon{
+        float: right;
+        display: flex;
+    }
+    footer{
+        font-size: 0.9em;
+    }
+}
